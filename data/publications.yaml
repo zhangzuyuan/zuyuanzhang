@@ -35,7 +35,7 @@
       given: Dongxiao
     - family: Yu
       given:  Jiguo
-  booktitle: IEEE Transactions on Intelligent Transportation Systems(TITS)
+  journal: IEEE Transactions on Intelligent Transportation Systems(TITS)
   title: "A Distributed Abstract Mac Layer for Cooperative Learning on Internet of Vehicles"
   year: 2024
   type: journal
