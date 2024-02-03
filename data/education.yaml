@@ -1,0 +1,22 @@
+---
+- degree: PhD
+  department: Department of Electrical and Computer Engineering
+  school: The George Washington University
+  schoolUrl: https://www.gwu.edu/
+  period: ing
+  thesis: Reinforcement Learning
+  supervisor:
+    - name: Tian Lan
+      homepage: https://www2.seas.gwu.edu/~tlan/
+- degree: B.Eng.
+  department: Computer Science and Engineering
+  school: Shandong University
+  schoolUrl: https://www.sdu.edu.cn/
+  period: Jun. 2023
+  supervisor:
+    - name: Dongxiao Yu
+      homepage: https://www.cs.sdu.edu.cn/info/1070/5367.htm
+      note: primary
+    - name: Yifei Zou
+      homepage: https://www.cs.sdu.edu.cn/info/1072/4896.htm
+      note: secondary

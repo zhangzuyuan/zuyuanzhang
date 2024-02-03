@@ -1,0 +1,95 @@
+---
+service:
+  - title: Reviewer
+    venue: IEEE Transactions on Intelligent Transportation Systems(TITS)
+    date: "2024"
+  - title: Reviewer
+    venue: ACM Journal of Data and Information Quality(JDIQ)
+    date: "2024"
+  # - title: Program Committee
+  #   venue: IEEE/ACM International Conference on Automated Software Engineering (ASE)
+  #   date: "2024"
+  # - title: Reviewer
+  #   venue: "Journal of Systems & Software (JSS)"
+  #   date: Dec 2023
+  # - title: Reviewer
+  #   venue: "Empirical Software Engineering (EMSE)"
+  #   date: Sep 2023
+  # - title: Program Committee
+  #   venue: ACM International Conference on the Foundations of Software Engineering (FSE)
+  #   date: "2024"
+  # - title: Program Committee
+  #   venue: International Conference on Program Comprehension (ICPC)
+  #   date: "2024"
+  # - title: Program Committee (Early Research Achievements)
+  #   venue: Asia-Pacific Software Engineering Conference (APSEC)
+  #   date: "2023"
+  # - title: Reviewer
+  #   venue: "Empirical Software Engineering (EMSE)"
+  #   date: Apr 2023
+  # - title: Program Committee (Registered Report Track)
+  #   venue: International Conference on Cooperative and Human Aspects of Software Engineering (CHASE)
+  #   date: "2023"
+  # - title: Program Committee
+  #   venue: International Conference on Program Comprehension (ICPC)
+  #   date: "2023"
+  # - title: Program Committee
+  #   venue: Mining Software Repositories (MSR) Conference
+  #   date: "2023"
+  # - title: Reviewer
+  #   venue: "Empirical Software Engineering (EMSE)"
+  #   date: Nov 2022
+  # - title: Reviewer
+  #   venue: "Journal of Software: Evolution and Process (JSME)"
+  #   date: May 2022
+  # - title: Reviewer
+  #   venue: "ACM Transactions on Software Engineering and Methods"
+  #   date: Mar. 2022
+  # - title: Proceedings Co-Chair
+  #   venue: "Asia-Pacific Software Engineering Conference (APSEC)"
+  #   date: "2022"
+  # - title: Publicity Chair
+  #   venue: International Workshop on Software Clones (IWSC)
+  #   date: "2022"
+  # - title: Program Committee
+  #   venue: Mining Software Repositories (MSR) Conference
+  #   date: "2022"
+  # - title: Reviewer
+  #   venue: "IEEE Transactions on Reliability"
+  #   date: Dec. 2021
+  # - title: Reviewer
+  #   venue: "IEEE Transactions on Software Engineering (TSE)"
+  #   date: Dec. 2021
+  # - title: Keynote
+  #   venue:
+  #     18th IEEE/ACIS International Virtual Conference on Software Engineering,
+  #     Management and Applications (SERA2021)
+  #   date: "2021"
+  # - title: Reviewer
+  #   venue: "Journal of Software: Evolution and Process (JSME)"
+  #   date: Jun. 2021
+  # - title: Reviewer
+  #   venue: Information and Software Technology (IST)
+  #   date: Mar. 2016
+  # - title: Student Volunteer
+  #   venue:
+  #     "10th Joint Meeting of the European Software Engineering Conference and the
+  #     ACM SIGSOFT Symposium on the Foundations of Software Engineering "
+  #   date: "2015"
+# subreview:
+#   - QRS2021
+#   - ASE2021
+#   - ICSME2021
+#   - MSR2018
+#   - ICSME2017
+#   - MSR2017
+#   - SANER2017
+#   - ICSME2016
+#   - SCAM2016
+#   - SQJ2016
+#   - ICSME2015
+#   - ESEC/FSE2013
+#   - ICSE2011
+#   - ESEC/FSE2011
+#   - FSE2010
+#   - ICSM2010

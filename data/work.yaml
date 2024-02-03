@@ -1,0 +1,23 @@
+---
+- title: Research assistant
+  affiliation: The George Washington University, Department of Electrical and Computer Engineering
+  url: https://ece.engineering.gwu.edu/
+  city: Washington, DC
+  country: USA
+  begin:
+    month: September
+    year: 2023
+  end:
+    month: July
+    year: 2028
+- title: Research assistant
+  affiliation: Shandong University, School of Computer Science and Technology, Institute of Intelligent Computing
+  url: https://iic.sdu.edu.cn/
+  city: Qingdao
+  country: China
+  begin:
+    month: September
+    year: 2021
+  end:
+    month: July
+    year: 2023
