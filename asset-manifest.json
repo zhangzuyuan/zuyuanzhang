@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/zuyuanzhang/static/css/main.51b679df.css",
-    "main.js": "/zuyuanzhang/static/js/main.4b36be16.js",
-    "static/media/academicons.svg": "/zuyuanzhang/static/media/academicons.c788a0dd6b8ea2fdfba6.svg",
-    "static/media/academicons.woff": "/zuyuanzhang/static/media/academicons.f9238352271492d38233.woff",
-    "static/media/academicons.eot": "/zuyuanzhang/static/media/academicons.187230b51fe48546c4f7.eot",
-    "static/media/academicons.ttf": "/zuyuanzhang/static/media/academicons.813078f03d628816fd64.ttf",
-    "index.html": "/zuyuanzhang/index.html",
-    "main.51b679df.css.map": "/zuyuanzhang/static/css/main.51b679df.css.map",
-    "main.4b36be16.js.map": "/zuyuanzhang/static/js/main.4b36be16.js.map"
+    "main.css": "./static/css/main.4e81274d.css",
+    "main.js": "./static/js/main.4b36be16.js",
+    "static/media/academicons.svg": "./static/media/academicons.c788a0dd6b8ea2fdfba6.svg",
+    "static/media/academicons.woff": "./static/media/academicons.f9238352271492d38233.woff",
+    "static/media/academicons.eot": "./static/media/academicons.187230b51fe48546c4f7.eot",
+    "static/media/academicons.ttf": "./static/media/academicons.813078f03d628816fd64.ttf",
+    "index.html": "./index.html",
+    "main.4e81274d.css.map": "./static/css/main.4e81274d.css.map",
+    "main.4b36be16.js.map": "./static/js/main.4b36be16.js.map"
   },
   "entrypoints": [
-    "static/css/main.51b679df.css",
+    "static/css/main.4e81274d.css",
     "static/js/main.4b36be16.js"
   ]
 }
