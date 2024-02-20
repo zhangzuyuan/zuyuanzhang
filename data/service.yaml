@@ -6,6 +6,9 @@ service:
   - title: Reviewer
     venue: ACM Journal of Data and Information Quality(JDIQ)
     date: "2024"
+  - title: Reviewer
+    venue: IEEE Transactions on Neural Networks and Learning Systems(TNNLS)
+    date: "2024"
   # - title: Program Committee
   #   venue: IEEE/ACM International Conference on Automated Software Engineering (ASE)
   #   date: "2024"
