@@ -166,7 +166,7 @@ function Publications() {
           <i className="ai ai-orcid" /> ORCID
         </Button>{" "} */}
         <Button
-          href=""
+          href="https://scholar.google.com/citations?user=rlRzWFAAAAAJ&hl"
           variant="outline-success"
         >
           <i className="ai ai-google-scholar" /> Google Scholar

@@ -14,7 +14,7 @@ function Abstract() {
     <Container style={{ marginTop: "2rem", marginBottom: "1rem" }}>
       <Row className="align-items-center">
         <Col md="auto">
-          <img src="./profile.png" width={200} alt="DongGyun Han" />
+          <img src="./profile.png" width={200} alt="Zuyuan Zhang" />
         </Col>
         <Col>
           <h2>
