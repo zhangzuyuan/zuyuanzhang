@@ -34,10 +34,14 @@ function Abstract() {
           and worked with{" "}
           <a href="https://web.ics.purdue.edu/~vaneet/">
           Prof. Vaneet Aggarwal
-          </a>{" "}
-          and{" "}
+          </a>
+          ,{" "}
           <a href="https://imani.lab.northeastern.edu/">
           Prof. Mahdi Imani
+          </a>.{" "}
+          and{" "}
+          <a href="http://fdcl.seas.gwu.edu/">
+          Prof. Taeyoung Lee
           </a>.{" "}
           I'm interested in Reinforcement learning, Federated Learning, and Generative Models.
           I obtained my bachelor’s degree (with distinction) in Computer Science from the{" "}
