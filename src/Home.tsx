@@ -83,6 +83,8 @@ function Contact() {
         allowFullScreen={false}
         loading="lazy"
       ></iframe>
+      <h4>Visitor:</h4>
+      <a href='https://clustrmaps.com/site/1bzo8'  title='Visit tracker'><img width="100%" src='//clustrmaps.com/map_v2.png?cl=ffffff&w=1600&t=n&d=fozTtj2Y_h1aaQASPJCSEFQQC-fljE72l2Moaq0pj1E'/></a>
     </>
   );
 }
