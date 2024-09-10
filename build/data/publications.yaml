@@ -1,4 +1,44 @@
 ---
+- id: TCOM
+  author:
+    - family: Jing
+      given: Guanlin
+    - family: Zou
+      given: Yifei
+    - family: Zhang
+      given: Zuyuan
+    - family: Yu
+      given: Dongxiao
+    - family: Dressler
+      given:  Falko
+    - family: Cheng
+      given: Xiuzhen
+  journal: IEEE Transactions on Communications(TMC) CCF-B
+  title: "Byzantine Fault Tolerant Consensus in Open Wireless Networks via an Abstract MAC Layer"
+  year: 2024
+  type: journal
+- id: TMC
+  author:
+    - family: Zhang
+      given: Congwei
+    - family: Zou
+      given: Yifei
+    - family: Zhang
+      given: Zuyuan
+    - family: Yu
+      given: Dongxiao
+    - family: G´omez
+      given: Jorge Torres
+    - family: Lan
+      given: Tian
+    - family: Dressler
+      given:  Falko
+    - family: Cheng
+      given: Xiuzhen
+  journal: IEEE Transactions on Mobile Computing(TMC) CCF-A
+  title: "Distributed Age-of-Information Scheduling with NOMA via Deep Reinforcement Learning"
+  year: 2024
+  type: journal
 - id: infocom
   author:
     - family: Qiao
@@ -17,7 +57,7 @@
       given: Ju
     - family: Yu
       given: Dongxiao
-  booktitle: IEEE International Conference on Computer Communications(INFOCOM)
+  booktitle: IEEE International Conference on Computer Communications(INFOCOM) CCF-A
   title: "BR-DeFedRL: Byzantine-Robust Decentralized Federated Reinforcement Learning with Fast Convergence and Communication Efficiency"
   year: 2024
   type: conference
@@ -35,7 +75,7 @@
       given: Dongxiao
     - family: Yu
       given:  Jiguo
-  journal: IEEE Transactions on Intelligent Transportation Systems(TITS)
+  journal: IEEE Transactions on Intelligent Transportation Systems(TITS) CCF-B
   title: "A Distributed Abstract Mac Layer for Cooperative Learning on Internet of Vehicles"
   year: 2024
   type: journal
