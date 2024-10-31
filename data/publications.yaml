@@ -1,4 +1,26 @@
 ---
+- id: Asilomar 
+  author:
+    - family: Ravari
+      given: Amirhossein 
+    - family: Jiang
+      given: Guangyu 
+    - family: Zhang
+      given: Zuyuan 
+    - family: Imani
+      given: Mahdi 
+    - family: Thomson
+      given: Robert H.
+    - family: Pyke
+      given:  Aryn A.
+    - family: Bastian
+      given:  Nathaniel D. 
+    - family: Lan
+      given: Tian 
+  booktitle: In proceedings of the 57th Asilomar Conference on Signals, Systems, and Computers
+  title: "Adversarial Inverse Learning of Defense Policies Conditioned on Human Factor Models"
+  year: 2024
+  type: conference
 - id: TCOM
   author:
     - family: Jing
