@@ -1,4 +1,16 @@
 ---
+- id: infocom
+  author:
+    - family: Zhang
+      given: Zuyuan
+    - family: Aggarwal
+      given: Vaneet
+    - family: Lan
+      given: Tian
+  booktitle: IEEE International Conference on Computer Communications(INFOCOM) CCF-A
+  title: "Network Diffuser for Placing-Scheduling Service Function Chains with Inverse Demonstration"
+  year: 2025
+  type: conference
 - id: Asilomar 
   author:
     - family: Ravari
