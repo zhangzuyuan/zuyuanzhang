@@ -1,4 +1,20 @@
 ---
+- id: aaai
+  author:
+    - family: Zhang
+      given: Zuyuan
+    - family: Zhou
+      given: Hanhan
+    - family: Imani
+      given: Mahdi 
+    - family: Lee
+      given: Taeyoung  
+    - family: Lan
+      given: Tian
+  booktitle: The 39th Annual AAAI Conference on Artificial Intelligence (AAAI) CCF-A
+  title: "Learning to Collaborate with Unknown Agents in the Absence of Reward"
+  year: 2025
+  type: conference
 - id: infocom
   author:
     - family: Zhang
