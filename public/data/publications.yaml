@@ -1,6 +1,26 @@
 ---
 - id: aaai
   author:
+    - family: Yu
+      given: Fei Xu
+    - family: Zhang
+      given: Zuyuan
+    - family: Grob
+      given: Emily
+    - family: Adam
+      given: Gina 
+    - family: Coffey
+      given: Sean  
+    - family: Bastian
+      given: Nathaniel D.
+    - family: Lan
+      given: Tian
+  booktitle: AAAI 2025 Workshop on Artificial Intelligence for Wireless Communications and Networking (AI4WCN) CCF-A
+  title: "Look-Ahead Robust Network Optimization with Generative State Predictions"
+  year: 2025
+  type: conference
+- id: aaai
+  author:
     - family: Zhang
       given: Zuyuan
     - family: Zhou
