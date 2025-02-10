@@ -26,7 +26,7 @@ function Abstract() {
           <h5>PhD Student</h5>
           <h5>Department of Electrical and Computer Engineering</h5>
           <h5>The George Washington University</h5>
-          I'm currently a first-year Ph.D. student at the Department of ECE, George Washington University, in the Lab for Intelligent Networking and Computing.
+          I'm currently a second-year Ph.D. Candidate at the Department of ECE, George Washington University, in the Lab for Intelligent Networking and Computing.
           I'm fortunate and grateful to be advised by{" "}
           <a href="https://www2.seas.gwu.edu/~tlan/">
             Prof. Tian Lan
