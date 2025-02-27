@@ -1,4 +1,26 @@
 ---
+- id: TON
+  author:
+    - family: Yang
+      given: Li
+    - family: Zou
+      given: Yifei
+    - family: Zhang
+      given: Zuyuan
+    - family: Wang
+      given:  Peng
+    - family: Yu
+      given: Dongxiao
+    - family: Zubow
+      given: Anatolij
+    - family: Dressler
+      given:  Falko
+    - family: Cheng
+      given: Xiuzhen
+  journal: IEEE/ACM Transactions on Networking(TON) CCF-A
+  title: "Jamming-Resilient Physical-to-Virtual Communications in Digital Twin Edge Networks"
+  year: 2025
+  type: journal
 - id: aaai
   author:
     - family: Yu

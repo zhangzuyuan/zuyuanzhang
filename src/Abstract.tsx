@@ -23,7 +23,7 @@ function Abstract() {
               <FontAwesomeIcon icon={faVolumeUp} onClick={playFirstName} />
             </sup>{" "} */}
           </h2>
-          <h5>PhD Student</h5>
+          <h5>PhD Candidate</h5>
           <h5>Department of Electrical and Computer Engineering</h5>
           <h5>The George Washington University</h5>
           I'm currently a second-year Ph.D. Candidate at the Department of ECE, George Washington University, in the Lab for Intelligent Networking and Computing.
