@@ -1,4 +1,22 @@
 ---
+- id: NeurIPS 
+  author:
+    - family: Tao
+      given: Youming
+    - family: Zhang
+      given: Zuyuan
+    - family: Yu
+      given: Dongxiao
+    - family: Cheng
+      given: Xiuzhen 
+    - family: Dressler
+      given: Falko
+    - family: Wang
+      given: Di
+  booktitle: The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS) CCF-A
+  title: "Second-Order Convergence in Private Stochastic Non-Convex Optimization"
+  year: 2025
+  type: conference
 - id: TON
   author:
     - family: Yang
