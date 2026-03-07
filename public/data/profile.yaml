@@ -1,0 +1,30 @@
+name: Zuyuan Zhang
+title: Ph.D. Candidate
+affiliation: Department of Electrical and Computer Engineering, The George Washington University
+lab: Lab for Intelligent Networking and Computing
+advisor: Prof. Tian Lan
+advisorUrl: https://www2.seas.gwu.edu/~tlan/
+email: zuyuan.zhang@gwu.edu
+location: Washington, DC, USA
+office: 5000 Science & Engineering Hall, 800 22nd Street NW
+mapEmbedUrl: https://www.google.com/maps?q=800%2022nd%20Street%20NW%20Washington%20DC%2020052&output=embed
+visitorMapUrl: https://clustrmaps.com/site/1bzo8
+visitorMapImage: //clustrmaps.com/map_v2.png?cl=ffffff&w=1600&t=n&d=fozTtj2Y_h1aaQASPJCSEFQQC-fljE72l2Moaq0pj1E
+cvUrl: ./files/cv.pdf
+profileImage: /profile.png
+bio:
+  - I am a Ph.D. candidate in Electrical and Computer Engineering at The George Washington University. My research broadly lies at the intersection of reinforcement learning, Optimization, Game Theory, and Decision-making algorithms.
+  - I am fortunate to be advised by Prof. Tian Lan and have collaborated with researchers including Prof. Vaneet Aggarwal, Prof. Mahdi Imani, and Prof. Taeyoung Lee.
+  - I received my B.Eng. in Computer Science from Taishan (Honors) College, Shandong University, in 2023.
+interests:
+  - Reinforcement Learning
+  - Optimization
+  - Game Theory
+  - Decision-making algorithms
+socials:
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=rlRzWFAAAAAJ&hl
+  - label: GitHub
+    url: https://github.com/zhangzuyuan
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/zuyuanzhang/

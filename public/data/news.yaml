@@ -1,0 +1,19 @@
+- date: 2025
+  title: NeurIPS 2025 paper accepted
+  description: Second-Order Convergence in Private Stochastic Non-Convex Optimization.
+
+- date: 2025
+  title: AAAI 2025 paper accepted
+  description: Learning to Collaborate with Unknown Agents in the Absence of Reward.
+
+- date: 2025
+  title: INFOCOM 2025 paper accepted
+  description: Network Diffuser for Placing-Scheduling Service Function Chains with Inverse Demonstration.
+
+- date: 2024
+  title: Asilomar 2024 paper presented
+  description: Adversarial Inverse Learning of Defense Policies Conditioned on Human Factor Models.
+
+- date: 2024
+  title: INFOCOM 2024 paper accepted
+  description:  "BR-DeFedRL: Byzantine-Robust Decentralized Federated Reinforcement Learning with Fast Convergence and Communication Efficiency "
