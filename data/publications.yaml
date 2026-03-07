@@ -1,5 +1,139 @@
 ---
-- id: NeurIPS 
+- id: zhang2026cochain
+  title: "Cochain Perspectives on Temporal-Difference Signals for Learning Beyond Markov Dynamics"
+  year: 2026
+  type: conference
+  author:
+    - family: Zhang
+      given: Zuyuan
+    - family: Tang
+      given: Sizhe 
+    - family: Lan
+      given: Tian
+  booktitle: arXiv preprint
+  venueShort: arXiv
+  status: preprint
+  preprint: https://arxiv.org/abs/2602.06939
+  abstract: |
+    Non-Markovian dynamics are commonly found in real-world environments due to long-range dependencies, partial observability, and memory effects. The Bellman equation that is the central pillar of Reinforcement learning (RL) becomes only approximately valid under Non-Markovian. Existing work often focus on practical algorithm designs and offer limited theoretical treatment to address key questions, such as what dynamics are indeed capturable by the Bellman framework and how to inspire new algorithm classes with optimal approximations. In this paper, we present a novel topological viewpoint on temporal-difference (TD) based RL. We show that TD errors can be viewed as 1-cochain in the topological space of state transitions, while Markov dynamics are then interpreted as topological integrability. This novel view enables us to obtain a Hodge-type decomposition of TD errors into an integrable component and a topological residual, through a Bellman–de Rham projection. We further propose HodgeFlow Policy Search (HFPS) by fitting a {potential network} to minimize the non-integrable projection residual in RL, achieving stability/sensitivity guarantees. In numerical evaluations, HFPS is shown to significantly improve RL performance under non-Markovian.
+- id: zhang2026structuring
+  title: "Structuring Value Representations via Geometric Coherence in Markov Decision Processes"
+  year: 2026
+  type: conference
+  author:
+    - family: Zhang
+      given: Zuyuan
+    - family: Fang 
+      given: Zeyu  
+    - family: Lan
+      given: Tian
+  booktitle: arXiv preprint
+  venueShort: arXiv
+  status: preprint
+  preprint: https://arxiv.org/abs/2602.02978
+  abstract: |
+    Geometric properties can be leveraged to stabilize and speed reinforcement learning. Existing examples include encoding symmetry structure, geometry-aware data augmentation, and enforcing structural restrictions. In this paper, we take a novel view of RL through the lens of order theory and recast value function estimates into learning a desired poset (partially ordered set). We propose \emph{GCR-RL} (Geometric Coherence Regularized Reinforcement Learning) that computes a sequence of super-poset refinements -- by refining posets in previous steps and learning additional order relationships from temporal difference signals -- thus ensuring geometric coherence across the sequence of posets underpinning the learned value functions. Two novel algorithms  by Q-learning and by actor--critic are developed to efficiently realize these super-poset refinements. Their theoretical properties and convergence rates are analyzed. We empirically evaluate GCR-RL in a range of tasks and demonstrate significant improvements in sample efficiency and stable performance over strong baselines.
+- id: zhang2026geometry
+  title: "Geometry of drifting mdps with path-integral stability certificates"
+  year: 2026
+  type: conference
+  author:
+    - family: Zhang
+      given: Zuyuan
+    - family: Imani 
+      given: Mahdi   
+    - family: Lan
+      given: Tian
+  booktitle: arXiv preprint
+  venueShort: arXiv
+  status: preprint
+  preprint: https://arxiv.org/abs/2601.21991
+  abstract: |
+    Real-world reinforcement learning is often \emph{nonstationary}: rewards and dynamics drift, accelerate, oscillate, and trigger abrupt switches in the optimal action. Existing theory often represents nonstationarity with coarse-scale models that measure \emph{how much} the environment changes, not \emph{how} it changes locally---even though acceleration and near-ties drive tracking error and policy chattering. We take a geometric view of nonstationary discounted Markov Decision Processes (MDPs) by modeling the environment as a differentiable homotopy path and tracking the induced motion of the optimal Bellman fixed point. This yields a length--curvature--kink signature of intrinsic complexity: cumulative drift, acceleration/oscillation, and action-gap-induced nonsmoothness. We prove a solver-agnostic path-integral stability bound and derive gap-safe feasible regions that certify local stability away from switch regimes. Building on these results, we introduce \textit{Homotopy-Tracking RL (HT-RL)} and \textit{HT-MCTS}, lightweight wrappers that estimate replay-based proxies of length, curvature, and near-tie proximity online and adapt learning or planning intensity accordingly. Experiments show improved tracking and dynamic regret over matched static baselines, with the largest gains in oscillatory and switch-prone regimes.
+- id: fang2026manifold
+  title: "Manifold-Constrained Energy-Based Transition Models for Offline Reinforcement Learning"
+  year: 2026
+  type: conference
+  author:
+    - family: Fang
+      given: Zeyu 
+    - family: Zhang 
+      given: Zuyuan   
+    - family: Imani 
+      given: Mahdi   
+    - family: Lan
+      given: Tian
+  booktitle: arXiv preprint
+  venueShort: arXiv
+  status: preprint
+  preprint: https://arxiv.org/abs/2602.02900
+  abstract: |
+    Model-based offline reinforcement learning is brittle under distribution shift: policy improvement drives rollouts into state--action regions weakly supported by the dataset, where compounding model error yields severe value overestimation. We propose Manifold-Constrained Energy-based Transition Models (MC-ETM), which train conditional energy-based transition models using a manifold projection--diffusion negative sampler. MC-ETM learns a latent manifold of next states and generates near-manifold hard negatives by perturbing latent codes and running Langevin dynamics in latent space with the learned conditional energy, sharpening the energy landscape around the dataset support and improving sensitivity to subtle out-of-distribution deviations. For policy optimization, the learned energy provides a single reliability signal: rollouts are truncated when the minimum energy over sampled next states exceeds a threshold, and Bellman backups are stabilized via pessimistic penalties based on Q-value-level dispersion across energy-guided samples. We formalize MC-ETM through a hybrid pessimistic MDP formulation and derive a conservative performance bound separating in-support evaluation error from truncation risk. Empirically, MC-ETM improves multi-step dynamics fidelity and yields higher normalized returns on standard offline control benchmarks, particularly under irregular dynamics and sparse data coverage.
+- id: zhang2026lisfc
+  author:
+    - family: Zhang
+      given: Zuyuan
+    - family: Aggarwal
+      given: Vaneet
+    - family: Lan
+      given: Tian
+  booktitle: IEEE INFOCOM 2026 Workshop on Cloud-Network Convergence(INFOCOM CNC) CCF-A
+  venueShort:  INFOCOM CNC
+  title: "LiSFC-Search: Lifelong Search for Network SFC Optimization under Non-stationary Drifts"
+  year: 2026
+  type: conference
+  note: oral
+  status: accepted
+  selected: true
+  # preprint: https://arxiv.org/abs/2403.15341
+  # pdf: /papers/unknown-agents/paper.pdf
+  # site: https://infocom2025.ieee-infocom.org/
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  # image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  abstract: |
+    Edge-cloud convergence is reshaping service provisioning across 5G/6G and computing power networks (CPNs). Service function chaining (SFC) requires continuously placing and scheduling virtual network functions (VNFs) chains under compute/bandwidth and end-to-end QoS constraints. Most SFC optimizers assume static or stationary networks, and degrade under long-term topology/resource changes (failures, upgrades, expansions) that induce non-stationary graph drifts. We propose LiSFC, a Lipschitz lifelong planner that transfers MCTS statistics across drifting network configurations using an MDP-distance bound. More precisely, we formulate the problem as a sequence of MDPs indexed by the underlying network graph and constraints, and we define a \emph{graph drift} metric that upper-bounds the LiZero MDP distance. This allows LiSFC to import theoretical guarantees on bias and sample efficiency from the LiZero framework while being tailored to cloud-network convergence. We then design \emph{LiSFC-Search}, an SFC-aware unified MCTS (UMCTS) procedure that uses transferable adaptive UCT (aUCT) bonuses to reuse search statistics from prior CPN configurations. Preliminary results on synthetic CPN topologies and SFC workloads show that LiSFC consistently reduces SFC blocking probability and improves tail delay compared to non-transfer MCTS and purely learning-based baselines, highlighting its potential as an AI/ML building block for cloud-network convergence.
+  tags: [service function chaining, network optimization, generative models]
+#-----------------------------
+#  2025
+#-----------------------------
+- id: zhang2025tail
+  title: "Tail-risk-safe monte carlo tree search under pac-level guarantees"
+  year: 2025
+  type: conference
+  author:
+    - family: Zhang
+      given: Zuyuan
+    - family: Arnob  
+      given: Ghosh   
+    - family: Lan
+      given: Tian
+  booktitle: arXiv preprint
+  venueShort: arXiv
+  status: preprint
+  preprint: https://arxiv.org/abs/2508.05441
+  abstract: |
+    Making decisions with respect to just the expected returns in Monte Carlo Tree Search (MCTS) cannot account for the potential range of high-risk, adverse outcomes associated with a decision. To this end, safety-aware MCTS often consider some constrained variants -- by introducing some form of mean risk measures or hard cost thresholds. These approaches fail to provide rigorous tail-safety guarantees with respect to extreme or high-risk outcomes (denoted as tail-risk), potentially resulting in serious consequence in high-stake scenarios. This paper addresses the problem by developing two novel solutions. We first propose CVaR-MCTS, which embeds a coherent tail risk measure, Conditional Value-at-Risk (CVaR), into MCTS. Our CVaR-MCTS with parameter $\alpha$ achieves explicit tail-risk control over the expected loss in the "worst $(1-\alpha)\%$ scenarios." Second, we further address the estimation bias of tail-risk due to limited samples. We propose Wasserstein-MCTS  (or W-MCTS) by introducing a first-order Wasserstein ambiguity set $\mathcal{P}_{\varepsilon_{s}}(s,a)$ with radius $\varepsilon_{s}$ to characterize the uncertainty in tail-risk estimates. We prove PAC tail-safety guarantees for both CVaR-MCTS and W-MCTS and establish their regret. Evaluations on diverse simulated environments demonstrate that our proposed methods outperform existing baselines, effectively achieving robust tail-risk guarantees with improved rewards and stability.
+- id: zhang2025lipschitz
+  title: "Lipschitz lifelong monte carlo tree search for mastering non-stationary tasks"
+  year: 2025
+  type: conference
+  author:
+    - family: Zhang
+      given: Zuyuan
+    - family: Lan
+      given: Tian
+  booktitle: arXiv preprint
+  venueShort: arXiv
+  status: preprint
+  preprint: https://arxiv.org/abs/2502.00633
+  abstract: |
+    Monte Carlo Tree Search (MCTS) has proven highly effective in solving complex planning tasks by balancing exploration and exploitation using Upper Confidence Bound for Trees (UCT). However, existing work have not considered MCTS-based lifelong planning, where an agent faces a non-stationary series of tasks -- e.g., with varying transition probabilities and rewards -- that are drawn sequentially throughout the operational lifetime. This paper presents LiZero for Lipschitz lifelong planning using MCTS. We propose a novel concept of adaptive UCT (aUCT) to transfer knowledge from a source task to the exploration/exploitation of a new task, depending on both the Lipschitz continuity between tasks and the confidence of knowledge in  in Monte Carlo action sampling. We analyze LiZero's acceleration factor in terms of improved sampling efficiency and also develop efficient algorithms to compute aUCT in an online fashion by both data-driven and model-based approaches, whose sampling complexity and error bounds are also characterized. Experiment results show that LiZero significantly outperforms existing MCTS and lifelong learning baselines in terms of much faster convergence (3$\sim$4x) to optimal rewards. Our results highlight the potential of LiZero to advance decision-making and planning in dynamic real-world environments.
+
+- id: tao2025second
   author:
     - family: Tao
       given: Youming
@@ -14,10 +148,25 @@
     - family: Wang
       given: Di
   booktitle: The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS) CCF-A
-  title: "Second-Order Convergence in Private Stochastic Non-Convex Optimization"
+  venueShort: NeurIPS
+  title: "Second-order convergence in private stochastic non-convex optimization"
   year: 2025
   type: conference
-- id: TON
+  note: poster
+  status: accepted
+  selected: true
+  preprint: https://arxiv.org/abs/2505.15647
+  # pdf: /papers/unknown-agents/paper.pdf
+  site: https://neurips.cc/
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  # image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  abstract: "We investigate the problem of finding second-order stationary points (SOSP) in differentially private (DP) stochastic non-convex optimization. Existing methods suffer from two key limitations: (i) inaccurate convergence error rate due to overlooking gradient variance in the saddle point escape analysis, and (ii) dependence on auxiliary private model selection procedures for identifying DP-SOSP, which can significantly impair utility, particularly in distributed settings. To address these issues, we propose a generic perturbed stochastic gradient descent (PSGD) framework built upon Gaussian noise injection and general gradient oracles. A core innovation of our framework is using model drift distance to determine whether PSGD escapes saddle points, ensuring convergence to approximate local minima without relying on second-order information or additional DP-SOSP identification. By leveraging the adaptive DPSPIDER estimator as a specific gradient oracle, we develop a new DP algorithm that rectifies the convergence error rates reported in prior work. We further extend this algorithm to distributed learning with heterogeneous data, providing the first formal guarantees for finding DP-SOSP in such settings. Our analysis also highlights the detrimental impacts of private selection procedures in distributed learning under high-dimensional models, underscoring the practical benefits of our design. Numerical experiments on real-world datasets validate the efficacy of our approach."
+  tags: [differential privacy, non-convex optimization, second-order stationary points]
+- id: yang2025jamming
   author:
     - family: Yang
       given: Li
@@ -36,10 +185,27 @@
     - family: Cheng
       given: Xiuzhen
   journal: IEEE/ACM Transactions on Networking(TON) CCF-A
-  title: "Jamming-Resilient Physical-to-Virtual Communications in Digital Twin Edge Networks"
+  venueShort: TON
+  title: "Jamming-resilient physical-to-virtual communications in digital twin edge networks"
   year: 2025
   type: journal
-- id: aaai
+  note: to appear
+  status: accepted
+  selected: true
+  # preprint: https://arxiv.org/abs/2505.15647
+  # pdf: /papers/unknown-agents/paper.pdf
+  site: https://ton.pubpub.org/
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  # image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  abstract: |
+    As an integration of digital twin and edge computing, the digital twin edge networks (DITENs) have been proposed in recent years to fill the gap between physical edge networks and digital systems. Meanwhile, the multi-access wireless environments in edge computing make it hard to provide ultra-reliable and low-latency communications for digital twin, especially when the jamming attacks can be launched by the adversaries. This paper studies the jamming-resilient physical-to-virtual communication (PTVC) problem in DITENs despite strong cooperative jamming. Note that the previous jamming models mainly focus on the jamming behaviors from an individual adversary and are restricted by the energy budget limitation and uniform jamming assumption. In this paper, we consider a more comprehensive jamming model, in which $f$ adversaries can cooperatively launch their jamming attacks in totally $k$ wireless channels with unlimited power budget and non-uniform jamming signals. Then, based on the new proposed $(k,f)$-cooperative jamming model, we show that $k>f$ is the necessary and also sufficient condition to solve the PTVC problem. On one hand, we prove that the PTVC problem is insoluble when $f\leq k$; on the other hand, two distributed algorithms are given as the solutions of the PTVC problem among $n$ physical objectives and one sink node when $k>f$, the time complexity of which are $O(\frac{n \log n}{k (\log k-\log f)})$ and $O(\frac{n \log n}{\log k-\log f})$ based on the communication modes with/without acknowledgement, respectively. Both of the theoretical results and empirical simulations are conducted to show the resilience of our algorithms despite such a strong cooperative jamming model. 
+  # "As an integration of digital twin and edge computing, the digital twin edge networks (DITENs) have been proposed in recent years to fill the gap between physical edge networks and digital systems. Meanwhile, the multi-access wireless environments in edge computing make it hard to provide ultra-reliable and low-latency communications for digital twin, especially when the jamming attacks can be launched by the adversaries. This paper studies the jamming-resilient physical-to-virtual communication (PTVC) problem in DITENs despite strong cooperative jamming. Note that the previous jamming models mainly focus on the jamming behaviors from an individual adversary and are restricted by the energy budget limitation and uniform jamming assumption. In this paper, we consider a more comprehensive jamming model, in which $f$ adversaries can cooperatively launch their jamming attacks in totally k wireless channels with unlimited power budget and non-uniform jamming signals. Then, based on the new proposed (k,f)-cooperative jamming model, we show that k>f is the necessary and also sufficient condition to solve the PTVC problem. On one hand, we prove that the PTVC problem is insoluble when f leq k; on the other hand, two distributed algorithms are given as the solutions of the PTVC problem among $n$ physical objectives and one sink node when k>f, the time complexity of which are O(frac{n log n}{k (log k-log f)}) and O(frac{n log n}{log k-log f}) based on the communication modes with/without acknowledgement, respectively. Both of the theoretical results and empirical simulations are conducted to show the resilience of our algorithms despite such a strong cooperative jamming model. "
+  tags: [jamming resilience, digital twin, edge networks]
+- id: yu2024look
   author:
     - family: Yu
       given: Fei Xu
@@ -56,26 +222,56 @@
     - family: Lan
       given: Tian
   booktitle: AAAI 2025 Workshop on Artificial Intelligence for Wireless Communications and Networking (AI4WCN) CCF-A
-  title: "Look-Ahead Robust Network Optimization with Generative State Predictions"
+  venueShort: AI4WCN
+  title: "Look-ahead robust network optimization with generative state predictions"
   year: 2025
   type: conference
-- id: aaai
+  note: poster
+  status: accepted
+  selected: true
+  # preprint: https://arxiv.org/abs/2505.15647
+  # pdf: /papers/unknown-agents/paper.pdf
+  site: https://aaai.org/Conferences/AAAI-25/ai4wcn.php
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  # image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  abstract: "In network optimization, especially in environments with significant uncertainty, traditional approaches are often overly conservative which leads to inefficiencies. Robust network planning is essential when network conditions can vary unpredictably. Traditional robust approaches tend to protect against all types of uncertainty, including those with minimal impact, resulting in suboptimal performance and resource allocation. To address this, we propose leveraging diffusion models to generate future network states based on historical data, capturing realistic variations without overgeneralizing uncertainty. Our method defines an uncertainty set based on these generated states, focusing on probable scenarios rather than extreme outliers. Using this uncertainty set, we use robust optimization to allocate resources and ensure network reliability under dynamic conditions. Preliminary experiments demonstrate that our approach achieves a balance between robustness and efficiency, significantly outperforming rational methods in realistic network scenarios."  
+  tags: [robust optimization, generative models, network optimization]
+- id: Zhang2025AAAIUnknownAgents
   author:
     - family: Zhang
       given: Zuyuan
     - family: Zhou
       given: Hanhan
     - family: Imani
-      given: Mahdi 
+      given: Mahdi
     - family: Lee
-      given: Taeyoung  
+      given: Taeyoung
     - family: Lan
       given: Tian
-  booktitle: The 39th Annual AAAI Conference on Artificial Intelligence (AAAI) CCF-A (oral)
+  booktitle: The 39th Annual AAAI Conference on Artificial Intelligence (AAAI) CCF-A
+  venueShort: AAAI
   title: "Learning to Collaborate with Unknown Agents in the Absence of Reward"
   year: 2025
   type: conference
-- id: infocom
+  note: oral
+  status: accepted
+  selected: true
+  preprint: https://arxiv.org/abs/2403.15341
+  # pdf: /papers/unknown-agents/paper.pdf
+  site: https://aaai.org/
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  abstract: "With the advancements of artificial intelligence (AI), emerging scenarios involving close collaboration between AI and other unknown agents are becoming increasingly common. This requires sometimes training AI agents to collaborate with unknown agents in the absence of a reward function -- which may be unavailable to the AI agents or even undefined by the unknown agents themselves -- thus posing news challenges to existing learning algorithms that often require knowing the shared reward. In this paper, we show that effective teaming with unknown agents can be achieved in the absence of a reward function, through actively modeling other unknown agents and reasoning about their latent rewards from available interaction/observation history. In particular, we propose a novel framework that leverages a kernel density Bayesian inverse learning method for active reward/goal inference and prove that multi-agent reinforcement learning guided by the inferred reward signals can converge to an optimal policy teaming with unknown agents. The result enables us to develop an adaptive policy update strategy, through the use of a family of pre-trained, goal-conditioned policies, further eliminating the need for online retraining. The proposed solution is evaluated using a wide range of diverse unknown agents of latent and even non-stationary reward. Our solution significantly increases the teaming performance between AI and unknown agents in the absence of reward."
+  tags: [multi-agent learning, collaboration, reward-free learning]
+- id: zhang2025network
   author:
     - family: Zhang
       given: Zuyuan
@@ -84,10 +280,69 @@
     - family: Lan
       given: Tian
   booktitle: IEEE International Conference on Computer Communications(INFOCOM) CCF-A
-  title: "Network Diffuser for Placing-Scheduling Service Function Chains with Inverse Demonstration"
+  venueShort: INFOCOM
+  title: "Network diffuser for placing-scheduling service function chains with inverse demonstration"
   year: 2025
   type: conference
-- id: Asilomar 
+  note: oral
+  status: accepted
+  selected: true
+  # preprint: https://arxiv.org/abs/2403.15341
+  # pdf: /papers/unknown-agents/paper.pdf
+  site: https://infocom2025.ieee-infocom.org/
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  # image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  abstract: "Network services are increasingly managed by con-sidering chained-up virtual network functions and relevant traffic flows, known as the Service Function Chains (SFCs). To deal with sequential arrivals of SFCs in an online fashion, we must consider two closely-coupled problems - an SFC placement problem that maps SFCs to servers/links in the network and an SFC scheduling problem that determines when each SFC is executed. Solving the whole SFC problem targeting these two optimizations jointly is extremely challenging. In this paper, we propose a novel network diffuser using conditional generative modeling for this SFC placing-scheduling optimization. Recent advances in generative AI and diffusion models have made it possible to generate high-quality images/videos and decision trajectories from language description. We formulate the SFC optimization as a problem of generating a state sequence for planning and perform graph diffusion on the state trajectories to enable extraction of SFC decisions, with SFC optimization constraints and objectives as conditions. To address the lack of demonstration data due to NP-hardness and exponential problem space of the SFC optimization, we also propose a novel and somewhat maverick approach - Rather than solving instances of this difficult optimization, we start with randomly-generated solutions as input, and then determine appropriate SFC optimization problems that render these solutions feasible. This inverse demonstration enables us to obtain sufficient expert demonstrations, i.e., problem-solution pairs, through further optimization. In our numerical evaluations, the proposed network diffuser outperforms learning and heuristic baselines, by ~20% improvement in SFC reward and ~50% reduction in SFC waiting time and blocking rate."
+  tags: [service function chaining, network optimization, generative models]
+
+#---------------------
+# 2024
+#---------------------
+- id: zhang2024modeling
+  title: "Modeling other players with bayesian beliefs for games with incomplete information"
+  year: 2025
+  type: conference
+  author:
+    - family: Zhang
+      given: Zuyuan
+    - family: Imani
+      given: Mahdi 
+    - family: Lan
+      given: Tian
+  booktitle: arXiv preprint
+  venueShort: arXiv
+  status: preprint
+  preprint: https://arxiv.org/abs/2405.14122
+  abstract: |
+    Bayesian games model interactive decision-making where players have incomplete information -- e.g., regarding payoffs and private data on players' strategies and preferences -- and must actively reason and update their belief models (with regard to such information) using observation and interaction history. Existing work on counterfactual regret minimization have shown great success for games with complete or imperfect information, but not for Bayesian games. To this end, we introduced a new CFR algorithm: Bayesian-CFR and analyze its regret bound with respect to Bayesian Nash Equilibria in Bayesian games. First, we present a method for updating the posterior distribution of beliefs about the game and other players' types. The method uses a kernel-density estimate and is shown to converge to the true distribution. Second, we define Bayesian regret and present a Bayesian-CFR minimization algorithm for computing the Bayesian Nash equilibrium. Finally, we extend this new approach to other existing algorithms, such as Bayesian-CFR+ and Deep Bayesian CFR. Experimental results show that our proposed solutions significantly outperform existing methods in classical Texas Hold'em games.
+- id: gao2024cooperative
+  title: "Cooperative backdoor attack in decentralized reinforcement learning with theoretical guarantee"
+  year: 2024
+  type: conference
+  author:
+    - family: Gao
+      given: Mengtong 
+    - family: Zou
+      given: Yifei 
+    - family: Zhang
+      given: Zuyuan
+    - family: Cheng
+      given: Xiuzhen  
+    - family: Yu
+      given: Dongxiao 
+  booktitle: arXiv preprint
+  venueShort: arXiv
+  status: preprint
+  preprint: https://arxiv.org/abs/2405.15245
+  abstract: |
+    The safety of decentralized reinforcement learning (RL) is a challenging problem since malicious agents can share their poisoned policies with benign agents. The paper investigates a cooperative backdoor attack in a decentralized reinforcement learning scenario. Differing from the existing methods that hide a whole backdoor attack behind their shared policies, our method decomposes the backdoor behavior into multiple components according to the state space of RL. Each malicious agent hides one component in its policy and shares its policy with the benign agents. When a benign agent learns all the poisoned policies, the backdoor attack is assembled in its policy. The theoretical proof is given to show that our cooperative method can successfully inject the backdoor into the RL policies of benign agents. Compared with the existing backdoor attacks, our cooperative method is more covert since the policy from each attacker only contains a component of the backdoor attack and is harder to detect. Extensive simulations are conducted based on Atari environments to demonstrate the efficiency and covertness of our method. To the best of our knowledge, this is the first paper presenting a provable cooperative backdoor attack in decentralized reinforcement learning.
+
+
+- id: ravari2024adversarial
   author:
     - family: Ravari
       given: Amirhossein 
@@ -106,10 +361,25 @@
     - family: Lan
       given: Tian 
   booktitle: In proceedings of the 57th Asilomar Conference on Signals, Systems, and Computers
-  title: "Adversarial Inverse Learning of Defense Policies Conditioned on Human Factor Models"
+  venueShort: Asilomar
+  title: "Adversarial inverse learning of defense policies conditioned on human factor models"
   year: 2024
   type: conference
-- id: TCOM
+  note: oral
+  status: accepted
+  selected: true
+  # preprint: https://arxiv.org/abs/2403.15341
+  # pdf: /papers/unknown-agents/paper.pdf
+  site: https://asilomar.org/
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  # image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  abstract: "The rapid growth of wireless networks has led to a significant increase in cybersecurity threats. Learning defense policies from offline data and expert demonstrations can eliminate the need to interact with a network/simulator during training, producing intelligent agents for automated/assistive defense. However, existing works on imitation and inverse learning are oblivious to various human factors that often affect decision-making and workflow in network defense. Learning defense policies that are conditioned on human factors can significantly improve the effectiveness of learned policies/models in network defense, better reflecting the varied behavior of human operators. To this end, we propose an adversarial inverse reinforcement learning algorithm incorporating models of human factors to learn user-specific policies/models in cyber defense from demonstrations and trajectories. The proposed algorithm captures varied operator behaviors through the modeling of three human factors: fatigue, expertise, and risk tolerance. Evaluations using the public Cyber Autonomy Gym for Experimentation (CAGE) Challenge 2 environment demonstrate significant improvement over baselines that are oblivious to underlying human factors."
+  tags: [cybersecurity, inverse reinforcement learning, human factors]
+- id: jing2024byzantine
   author:
     - family: Jing
       given: Guanlin
@@ -123,11 +393,26 @@
       given:  Falko
     - family: Cheng
       given: Xiuzhen
-  journal: IEEE Transactions on Communications(TMC) CCF-B
-  title: "Byzantine Fault Tolerant Consensus in Open Wireless Networks via an Abstract MAC Layer"
+  journal: IEEE Transactions on Communications(TCOM) CCF-B
+  venueShort: TCOM
+  title: "Byzantine fault tolerant consensus in open wireless networks via an abstract mac layer"
   year: 2024
   type: journal
-- id: TMC
+  note: to appear
+  status: accepted
+  selected: true
+  # preprint: https://arxiv.org/abs/2403.15341
+  # pdf: /papers/unknown-agents/paper.pdf
+  site: https://www.comsoc.org/publications/journals/ieee-transactions-communications
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  # image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  # abstract: "The rapid growth of wireless networks has led to a significant increase in cybersecurity threats. Learning defense policies from offline data and expert demonstrations can eliminate the need to interact with a network/simulator during training, producing intelligent agents for automated/assistive defense. However, existing works on imitation and inverse learning are oblivious to various human factors that often affect decision-making and workflow in network defense. Learning defense policies that are conditioned on human factors can significantly improve the effectiveness of learned policies/models in network defense, better reflecting the varied behavior of human operators. To this end, we propose an adversarial inverse reinforcement learning algorithm incorporating models of human factors to learn user-specific policies/models in cyber defense from demonstrations and trajectories. The proposed algorithm captures varied operator behaviors through the modeling of three human factors: fatigue, expertise, and risk tolerance. Evaluations using the public Cyber Autonomy Gym for Experimentation (CAGE) Challenge 2 environment demonstrate significant improvement over baselines that are oblivious to underlying human factors."
+  tags: []
+- id: zhang2024distributed
   author:
     - family: Zhang
       given: Congwei
@@ -146,10 +431,25 @@
     - family: Cheng
       given: Xiuzhen
   journal: IEEE Transactions on Mobile Computing(TMC) CCF-A
-  title: "Distributed Age-of-Information Scheduling with NOMA via Deep Reinforcement Learning"
+  venueShort: TMC
+  title: "Distributed age-of-information scheduling with noma via deep reinforcement learning"
   year: 2024
   type: journal
-- id: infocom
+  note: to appear
+  status: accepted
+  selected: true
+  # preprint: https://arxiv.org/abs/2403.15341
+  # pdf: /papers/unknown-agents/paper.pdf
+  site: https://
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  # image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  abstract: "Many emerging applications in edge computing require processing of huge volumes of data generated by end devices, using the freshest available information. In this paper, we address the distributed optimization of multi-user long-term average Age-of-Information (AoI) objectives in edge networks that use NOMA transmission. This poses a challenge of non-convex online optimization, which in existing work often requires either decision making in a combinatorial space or a global view of entire network states. To overcome this challenge, we propose a reinforcement learning-based framework that adopts a novel hierarchical decomposition of decision making. Specifically, we propose three different types of distributed agents to learn with respect to efficiency of AoI scheduling, fairness of AoI scheduling, as well as a high-level policy balancing these potentially conflicting design objectives. Not only does the proposed decomposition improve learning performance due to disentanglement of different design objectives/rewards, but it also enables the algorithm to learn the best policy while also learning the explanations – as actions can be directly compared in terms of the design objectives. Our evaluations show that the proposed algorithm improves the long-term average AoI by  and 400% compared to prior works with NOMA and the optimal solution without NOMA, respectively."
+  tags: [Age-of-Information, NOMA, Reinforcement Learning]
+- id: zhang2025network
   author:
     - family: Qiao
       given: Jing
@@ -168,10 +468,25 @@
     - family: Yu
       given: Dongxiao
   booktitle: IEEE International Conference on Computer Communications(INFOCOM) CCF-A
+  venueShort: INFOCOM
   title: "BR-DeFedRL: Byzantine-Robust Decentralized Federated Reinforcement Learning with Fast Convergence and Communication Efficiency"
   year: 2024
   type: conference
-- id: TITS
+  note: oral
+  status: accepted
+  selected: true
+  # preprint: https://arxiv.org/abs/2403.15341
+  # pdf: /papers/unknown-agents/paper.pdf
+  site: https://infocom2024.ieee-infocom.org/
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  # image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  abstract: "In this paper, we propose Byzantine-Robust Decentralized Federated Reinforcement Learning (BR-DeFedRL), an innovative framework that effectively combats the harmful influence of Byzantine agents by adaptively adjusting communication weights, thereby significantly enhancing the robustness of the learning system. By leveraging decentralized learning, our approach eliminates the dependence on a central server. Striking a harmonious balance between communication round count and sample complexity, BR-DeFedRL achieves efficient convergence with a rate of , where T denotes the communication rounds and N represents the local steps related to variance reduction. Notably, each agent attains an ϵ-approximation with a state-of-the-art sample complexity of . Extensive experimental validations further affirm the efficacy of BR-DeFedRL, making it a promising and practical solution for Byzantine-robust decentralized federated reinforcement learning."
+  tags: [Byzantine-Robust, Reinforcement Learning, Federated Learning]
+- id: zou2024distributed
   author:
     - family: Zou
       given: Yifei
@@ -186,10 +501,24 @@
     - family: Yu
       given:  Jiguo
   journal: IEEE Transactions on Intelligent Transportation Systems(TITS) CCF-B
+  venueShort: TITS
   title: "A Distributed Abstract Mac Layer for Cooperative Learning on Internet of Vehicles"
   year: 2024
   type: journal
-
+  note: to appear
+  status: accepted
+  selected: true
+  # preprint: https://arxiv.org/abs/2403.15341
+  # pdf: /papers/unknown-agents/paper.pdf
+  site: https://ieee-itss.org/pub/t-its/
+  # project: https://your-project-page.com
+  # code: https://github.com/your-repo
+  # slides: https://your-slides-link.com
+  # video: https://youtube.com/xxxx
+  # image: /papers/unknown-agents/teaser.pdf
+  # summary: "A short 1-2 sentence teaser shown in the preview panel."
+  abstract: "This paper addresses the problem of reliable communications for cooperative learning on Internet-of-Vehicles, where a large amount of data from users and services needs to be processed. Previous works have proposed various cooperative learning schemes, but they often assume that the communications between vehicles are reliable, without considering how to achieve this in an Internet-of-Vehicles network. This paper is the first one that implements an abstract MAC layer using a distributed deep reinforcement learning scheme, which can directly meet the reliable communication requirements of cooperative learning in previous works. Our abstract MAC layer performs two operations: acknowledgement, which makes sure that all vehicles can successfully broadcast their messages to all of their neighbors, and progress, which ensures that each vehicle can receive at least one message from its neighbors. These operations facilitate vehicles to exchange and update their training models in a cooperative learning service. Our simulation results show the efficiency and fairness of our deep reinforcement learning abstract MAC layer."
+  tag: [Internet-of-Vehicles, Mac Layer, Cooperative Learning]
 
 # ---
 # - id: Zhous24ICSE

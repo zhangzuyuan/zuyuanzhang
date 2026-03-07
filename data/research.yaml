@@ -1,0 +1,87 @@
+- title: Reinforcement Learning under Uncertainty and Incomplete Information
+  description: I study reinforcement learning and multi-agent decision making under uncertainty, with an emphasis on partial observability, incomplete information, missing reward feedback, and strategic interaction.
+  keywords:
+    - reinforcement learning
+    - multi-agent systems
+    - incomplete information
+    - uncertainty
+  bullets:
+    - Policy learning when rewards, types, or opponent information are partially observed or entirely unavailable.
+    - Bayesian and game-theoretic formulations for reasoning about hidden variables and unknown agents.
+    - Theoretical foundations for collaboration, adaptation, and strategic learning in uncertain environments.
+    - Extensions to networked and interactive decision systems as a secondary application branch.
+
+- title: Non-Stationary Decision Processes and Lifelong Planning
+  description: I work on sequential decision making in non-stationary environments, focusing on lifelong reinforcement learning, adaptive planning, robustness to distribution shift, and stability under drifting dynamics.
+  keywords:
+    - non-stationary rl
+    - lifelong learning
+    - planning
+    - robustness
+  bullets:
+    - Learning and planning in environments with drifting dynamics, changing rewards, or evolving task structure.
+    - Stable adaptation mechanisms with performance guarantees under temporal shift and non-stationarity.
+    - Monte Carlo tree search and sequential optimization methods for continual decision making.
+    - Connections to dynamic control and network optimization as downstream applications.
+
+- title: Geometric and Structured Foundations of Sequential Decision Making
+  description: I investigate geometric, topological, and structural principles underlying sequential decision making, with the goal of building more coherent value representations, transition models, and learning dynamics.
+  keywords:
+    - geometric rl
+    - structured representations
+    - value learning
+    - dynamics
+  bullets:
+    - Geometric structure in value functions, temporal-difference signals, and policy optimization.
+    - Representation learning for Markov and beyond-Markov decision processes using coherence and latent structure.
+    - Theoretical models of transition dynamics and decision evolution on constrained or structured spaces.
+    - Applications to offline reinforcement learning and general sequential prediction problems.
+
+- title: Trustworthy and Decentralized Learning Theory
+  description: I study robust and decentralized learning algorithms with an emphasis on Byzantine resilience, privacy, communication efficiency, and reliability in distributed optimization and reinforcement learning.
+  keywords:
+    - decentralized learning
+    - Byzantine robustness
+    - privacy
+    - distributed optimization
+  bullets:
+    - Learning and optimization under adversarial participants, unreliable communication, and decentralized coordination.
+    - Theoretical guarantees for robustness, convergence, and efficiency in distributed machine learning systems.
+    - Privacy-preserving and communication-efficient methods for collaborative learning.
+    - Connections to federated and networked AI systems as an application direction.
+
+# - title: Reinforcement Learning and Multi-Agent Decision Making
+#   description: I study reinforcement learning methods for decision making under uncertainty, with a focus on scalable control, agent interaction, and robust policy learning.
+#   keywords:
+#     - RL
+#     - MARL
+#     - sequential decision making
+#     - robustness
+#   bullets:
+#     - Multi-agent learning under limited or missing reward signals.
+#     - Scalable optimization for structured sequential control problems.
+#     - Learning-based decision support for dynamic networked environments.
+
+# - title: Intelligent Networking and Network Optimization
+#   description: I work on learning-enabled network optimization, including service function chain placement, wireless coordination, scheduling, and resilient network operations.
+#   keywords:
+#     - network optimization
+#     - wireless systems
+#     - scheduling
+#     - control
+#   bullets:
+#     - Service function chain placement and scheduling.
+#     - Learning-enhanced communication and control in dynamic systems.
+#     - Robust optimization under uncertainty and adversarial disturbances.
+
+# - title: Federated and Trustworthy Machine Learning
+#   description: I am interested in privacy, Byzantine robustness, and dependable distributed learning systems that remain effective under imperfect communication and decentralized coordination.
+#   keywords:
+#     - federated learning
+#     - distributed AI
+#     - Byzantine robustness
+#     - privacy
+#   bullets:
+#     - Communication-efficient and robust decentralized learning.
+#     - Fault tolerance and privacy in collaborative optimization.
+#     - Reliable deployment of AI systems in networked environments.
