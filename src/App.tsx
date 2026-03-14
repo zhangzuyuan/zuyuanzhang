@@ -2,6 +2,8 @@
 import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import SiteAssistant from "./SiteAssistant";
+
 
 interface LayoutProps {
   children: ReactNode;
@@ -50,6 +52,9 @@ function App({ children }: LayoutProps) {
       <main className="site-main">
         <Container>{children}</Container>
       </main>
+
+      {/* 全站助手，所有页面左下角都显示 */}
+      <SiteAssistant />
 
       <footer className="site-footer">
         <Container>

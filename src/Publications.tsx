@@ -23,6 +23,7 @@ import App from "./App";
 import { generateBibtex, getTypeLabel, getVenue, getVenueShort } from "./Paper";
 import { Paper, PaperType } from "./Types";
 import { loadYamlFile } from "./data";
+import PublicationChat from "./PublicationChat";
 
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
@@ -151,6 +152,8 @@ function PublicationCard(props: {
 }) {
   const { paper, onBibtex } = props;
   const [expanded, setExpanded] = useState(false);
+  // 加入LLM
+  const [chatOpen, setChatOpen] = useState(false);
   const hasPreview = Boolean(paper.summary || paper.abstract || paper.image);
 
   return (
@@ -234,6 +237,13 @@ function PublicationCard(props: {
               Preview <FontAwesomeIcon icon={expanded ? faChevronUp : faChevronDown} />
             </button>
           )}
+          {/* LLM 组件 */}
+          <button
+            className="link-chip button-like"
+            onClick={() => setChatOpen((value) => !value)}
+          >
+            Chat use LLM <FontAwesomeIcon icon={chatOpen ? faChevronUp : faChevronDown} />
+          </button>
         </div>
 
         {hasPreview && (
@@ -295,6 +305,14 @@ function PublicationCard(props: {
             </div>
           </Collapse>
         )}
+        {/* LLM 组件 */}
+        <Collapse in={chatOpen}>
+          <div className="preview-panel">
+            <div className="preview-label">Ask about this paper</div>
+            <PublicationChat paper={paper} />
+          </div>
+        </Collapse>
+        
       </Card.Body>
     </Card>
   );

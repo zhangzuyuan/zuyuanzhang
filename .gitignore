@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,macos,vim,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,macos,vim,react
 
+/public/lived2d/
+
+
 ### macOS ###
 # General
 .DS_Store

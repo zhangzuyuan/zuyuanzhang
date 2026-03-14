@@ -1,11 +1,11 @@
 {
-  "short_name": "Zuyun Zhang",
-  "name": "Zuyun Zhang",
+  "short_name": "Zuyuan Zhang",
+  "name": "Zuyuan Zhang",
   "icons": [
     {
       "src": "favicon.jpg",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "sizes": "64x64",
+      "type": "image/jpeg"
     }
   ],
   "start_url": ".",
@@ -13,3 +13,4 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+
