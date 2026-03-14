@@ -1,0 +1,27 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "tb412775207.moc3",
+    "Textures": [
+      "tb412775207.2048/texture_00.png"
+    ],
+    "Physics": "tb412775207.physics3.json",
+    "DisplayInfo": "tb412775207.cdi3.json",
+    "Expressions": [
+      { "Name": "exp1", "File": "1.exp3.json" },
+      { "Name": "exp2", "File": "2.exp3.json" },
+      { "Name": "exp3", "File": "3.exp3.json" },
+      { "Name": "exp4", "File": "4.exp3.json" },
+      { "Name": "exp5", "File": "5.exp3.json" },
+      { "Name": "exp6", "File": "6.exp3.json" },
+      { "Name": "exp7", "File": "7.exp3.json" }
+    ]
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": []
+    }
+  ]
+}
