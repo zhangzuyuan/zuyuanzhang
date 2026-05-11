@@ -675,46 +675,50 @@ code {
    Live2D 半身助手：透明层 + 纯气泡
    ========================= */
 
+/* =========================
+   Live2D 半身助手：最终可替换版
+   ========================= */
+
 .site-assistant-root {
   position: fixed;
   left: 10px;
-  bottom: 118px; /* 明确压在 footer 上方 */
+  bottom: 118px;
   z-index: 1600;
   pointer-events: none;
 }
 
-.site-assistant-root * {
-  pointer-events: auto;
-}
-
+/* 人物层永远只展示，不拦截页面点击 */
 .site-assistant-figure-layer {
   position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  overflow: visible;
   z-index: 2;
+  pointer-events: none !important;
 }
 
 .site-assistant-figure {
   position: relative;
+  width: 100%;
+  height: 100%;
   padding: 0;
+  margin: 0;
   border: 0;
   background: transparent;
   box-shadow: none;
-  cursor: pointer;
   overflow: visible;
   border-radius: 24px;
-  transition: transform 0.2s ease;
-}
-
-.site-assistant-figure:hover {
-  transform: translateY(-2px);
+  pointer-events: none !important;
 }
 
 .site-assistant-canvas {
   display: block;
+  width: 100%;
+  height: 100%;
   background: transparent !important;
   filter: drop-shadow(0 14px 28px rgba(15, 23, 42, 0.14));
+  pointer-events: none !important;
 }
 
 .site-assistant-fallback {
@@ -727,8 +731,30 @@ code {
   font-weight: 800;
   color: #64748b;
   background: transparent;
+  pointer-events: none !important;
 }
 
+/* 只有这小块区域能点开人物 */
+.site-assistant-hitbox {
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
+  width: 84px;
+  height: 170px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  border-radius: 24px;
+  z-index: 8;
+  cursor: pointer;
+  pointer-events: auto !important;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* 小气泡必须压过人物 */
 .site-assistant-mini-bubble {
   position: absolute;
   border: 0;
@@ -741,6 +767,10 @@ code {
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
   cursor: pointer;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
+  z-index: 20;
+  pointer-events: auto !important;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .site-assistant-mini-bubble:hover {
@@ -760,7 +790,7 @@ code {
   border-bottom-left-radius: 2px;
 }
 
-
+/* 对话框 */
 .site-assistant-dialog-wrap {
   position: absolute;
   width: min(440px, calc(100vw - 180px));
@@ -769,12 +799,17 @@ code {
   transform-origin: left bottom;
   pointer-events: none;
   transition: opacity 0.22s ease, transform 0.22s ease;
-  z-index: 6;
+  z-index: 30;
 }
 
 .site-assistant-dialog-wrap.is-visible {
   opacity: 1;
   transform: translateY(0);
+  pointer-events: auto;
+}
+
+.site-assistant-dialog,
+.site-assistant-dialog * {
   pointer-events: auto;
 }
 
@@ -801,40 +836,7 @@ code {
   display: none;
 }
 
-/* 顶部浮动操作气泡 */
-.site-assistant-floating-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.site-assistant-action-bubble {
-  border: 1px solid rgba(226, 232, 240, 0.96);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.96);
-  color: #334155;
-  padding: 9px 14px;
-  font-size: 0.88rem;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-}
-
-.site-assistant-action-bubble.close {
-  width: 38px;
-  height: 38px;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-
-.site-assistant-action-bubble:hover {
-  transform: translateY(-1px);
-}
-
-/* 提示词也全做成气泡 */
+/* 快捷提示词 */
 .site-assistant-dialog-quick {
   display: flex;
   flex-wrap: wrap;
@@ -867,7 +869,7 @@ code {
   cursor: not-allowed;
 }
 
-/* 消息区透明，不承担卡片背景 */
+/* 消息区 */
 .site-assistant-dialog-messages {
   display: flex;
   flex-direction: column;
@@ -879,163 +881,6 @@ code {
   background: transparent;
 }
 
-/* 系统提示也变成气泡 */
-.site-assistant-bubble.system {
-  background: rgba(255, 255, 255, 0.96);
-  color: #334155;
-  border: 1px solid rgba(226, 232, 240, 0.94);
-  border-top-left-radius: 8px;
-}
-
-.site-assistant-bubble.system::before {
-  content: "";
-  position: absolute;
-  left: -6px;
-  top: 12px;
-  width: 12px;
-  height: 12px;
-  background: rgba(255, 255, 255, 0.96);
-  border-left: 1px solid rgba(226, 232, 240, 0.94);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.94);
-  transform: rotate(45deg);
-}
-
-.site-assistant-bubble.system.error {
-  color: #b91c1c;
-}
-
-.site-assistant-bubble.system.note {
-  color: #64748b;
-}
-
-/* 输入区域也不要面板，只保留输入泡泡和发送泡泡 */
-.site-assistant-input-row {
-  display: flex;
-  gap: 10px;
-  align-items: flex-end;
-  padding: 0;
-  border: 0;
-  background: transparent;
-}
-
-.site-assistant-input {
-  flex: 1;
-  min-height: 54px;
-  max-height: 120px;
-  resize: vertical;
-  border: 1px solid rgba(226, 232, 240, 0.94);
-  border-radius: 20px;
-  padding: 12px 14px;
-  outline: none;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  background: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
-}
-
-.site-assistant-input:focus {
-  border-color: rgba(99, 102, 241, 0.5);
-  box-shadow:
-    0 0 0 3px rgba(99, 102, 241, 0.08),
-    0 10px 24px rgba(15, 23, 42, 0.08);
-}
-
-.site-assistant-send {
-  border: 0;
-  border-radius: 999px;
-  background: #4f46e5;
-  color: white;
-  padding: 12px 18px;
-  font-size: 0.92rem;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.24);
-}
-
-.site-assistant-send:hover:not(:disabled) {
-  transform: translateY(-1px);
-}
-
-.site-assistant-send:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-/* 气泡框 */
-.site-assistant-dialog {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-height: min(70vh, 760px);
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  overflow: visible;
-}
-
-.site-assistant-close-bubble {
-  align-self: flex-end;
-  width: 38px;
-  height: 38px;
-  border: 1px solid rgba(226, 232, 240, 0.96);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.96);
-  color: #334155;
-  font-size: 1.2rem;
-  line-height: 1;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-}
-
-.site-assistant-close-bubble:hover {
-  transform: translateY(-1px);
-}
-
-.site-assistant-dialog-quick {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0;
-  background: transparent;
-}
-
-.site-assistant-quick-chip {
-  border: 1px solid rgba(226, 232, 240, 0.96);
-  border-radius: 18px;
-  padding: 10px 14px;
-  background: rgba(255, 255, 255, 0.97);
-  color: #334155;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-  transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
-}
-
-.site-assistant-quick-chip:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.1);
-  background: rgba(248, 250, 252, 0.99);
-}
-
-.site-assistant-quick-chip:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
-}
-
-.site-assistant-dialog-messages {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 0;
-  min-height: 120px;
-  max-height: 340px;
-  overflow-y: auto;
-  background: transparent;
-}
-
-/* 这一组就是你缺的“左右气泡” */
 .site-assistant-bubble-row {
   display: flex;
   width: 100%;
@@ -1132,7 +977,7 @@ code {
   color: #64748b;
 }
 
-/* 输入区：发送后面跟 Reset */
+/* 输入区 */
 .site-assistant-input-row {
   display: flex;
   gap: 10px;
@@ -1196,7 +1041,8 @@ code {
 }
 
 .site-assistant-send:hover:not(:disabled),
-.site-assistant-reset:hover:not(:disabled) {
+.site-assistant-reset:hover:not(:disabled),
+.site-assistant-close-bubble:hover {
   transform: translateY(-1px);
 }
 
@@ -1206,6 +1052,121 @@ code {
   cursor: not-allowed;
 }
 
+.site-assistant-close-bubble {
+  align-self: flex-end;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(226, 232, 240, 0.96);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #334155;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
 
+/* 平板 / 手机统一缩小热点 */
+@media (max-width: 768px) {
+  .site-assistant-dialog-wrap {
+    width: min(340px, calc(100vw - 24px));
+  }
 
+  .site-assistant-dialog-messages {
+    max-height: 220px;
+  }
 
+  .site-assistant-bubble {
+    max-width: 88%;
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .site-assistant-input {
+    min-height: 48px;
+    font-size: 0.92rem;
+  }
+
+  .site-assistant-send,
+  .site-assistant-reset {
+    padding: 10px 14px;
+    font-size: 0.88rem;
+  }
+
+  .site-assistant-mini-bubble {
+    font-size: 0.84rem;
+    padding: 10px 14px;
+    z-index: 20;
+  }
+
+  .site-assistant-hitbox {
+    left: 22px !important;
+    bottom: 16px !important;
+    width: 62px !important;
+    height: 128px !important;
+  }
+}
+
+/* 更小手机再缩一圈 */
+@media (max-width: 480px) {
+  .site-assistant-figure-layer {
+    overflow: visible;
+  }
+
+  .site-assistant-figure {
+    width: 200px !important;
+    height: 410px !important;
+  }
+
+  .site-assistant-canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .site-assistant-hitbox {
+    left: 10px !important;
+    bottom: 0px !important;
+    width: 78px !important;
+    height: 112px !important;
+  }
+
+  .site-assistant-mini-bubble {
+    z-index: 20;
+    font-size: 0.84rem;
+    padding: 10px 14px;
+  }
+
+  .site-assistant-dialog-wrap {
+    width: auto;
+    max-width: 320px;
+    z-index: 2000;
+  }
+
+  .site-assistant-dialog {
+    max-height: min(62vh, 520px);
+  }
+
+  .site-assistant-dialog-messages {
+    max-height: 170px;
+  }
+
+  .site-assistant-input-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-assistant-input-actions {
+    justify-content: flex-end;
+  }
+
+  .site-assistant-close-bubble {
+    width: 34px;
+    height: 34px;
+    font-size: 1.05rem;
+  }
+
+  .site-assistant-quick-chip {
+    font-size: 0.84rem;
+    padding: 9px 12px;
+  }
+}

@@ -1,6 +1,15 @@
 ---
 service:
   - title: Reviewer
+    venue: IEEE Internet of Things Journal (IoT-J)
+    date: "2026"
+  - title: Reviewer
+    venue: Springer International Conference on Wireless Algorithms, Systems, and Applications (WASA)
+    date: "2026"
+  - title: Reviewer
+    venue: Forty-Third International Conference on Machine Learning (ICML)
+    date: "2026"
+  - title: Reviewer
     venue: The Fourteenth International Conference on Learning Representations (ICLR)
     date: "2025"
   - title: Program Committee
