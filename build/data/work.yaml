@@ -1,5 +1,16 @@
 ---
 - title: Research assistant
+  affiliation: Carnegie Mellon University 
+  url: https://www.cmu.edu/
+  city: Pittsburgh
+  country: USA
+  begin:
+    month: March
+    year: 2026
+  end:
+    month: May
+    year: 2026
+- title: Research assistant
   affiliation: The George Washington University, Department of Electrical and Computer Engineering
   url: https://ece.engineering.gwu.edu/
   city: Washington, DC

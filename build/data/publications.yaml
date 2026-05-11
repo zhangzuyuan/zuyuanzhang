@@ -1,6 +1,6 @@
 ---
 - id: zhang2026cochain
-  title: "Cochain Perspectives on Temporal-Difference Signals for Learning Beyond Markov Dynamics"
+  title: "HodgeFlow Policy Search by Topologically Dissecting Temporal-Difference Signals in Non-Markovian Environments"
   year: 2026
   type: conference
   author:
@@ -10,14 +10,15 @@
       given: Sizhe 
     - family: Lan
       given: Tian
-  booktitle: arXiv preprint
-  venueShort: arXiv
-  status: preprint
+  booktitle: Forty-third International Conference on Machine Learning (ICML) CCF-A
+  venueShort: ICML
+  status: accepted
+  selected: true
   preprint: https://arxiv.org/abs/2602.06939
   abstract: |
     Non-Markovian dynamics are commonly found in real-world environments due to long-range dependencies, partial observability, and memory effects. The Bellman equation that is the central pillar of Reinforcement learning (RL) becomes only approximately valid under Non-Markovian. Existing work often focus on practical algorithm designs and offer limited theoretical treatment to address key questions, such as what dynamics are indeed capturable by the Bellman framework and how to inspire new algorithm classes with optimal approximations. In this paper, we present a novel topological viewpoint on temporal-difference (TD) based RL. We show that TD errors can be viewed as 1-cochain in the topological space of state transitions, while Markov dynamics are then interpreted as topological integrability. This novel view enables us to obtain a Hodge-type decomposition of TD errors into an integrable component and a topological residual, through a Bellman–de Rham projection. We further propose HodgeFlow Policy Search (HFPS) by fitting a {potential network} to minimize the non-integrable projection residual in RL, achieving stability/sensitivity guarantees. In numerical evaluations, HFPS is shown to significantly improve RL performance under non-Markovian.
 - id: zhang2026structuring
-  title: "Structuring Value Representations via Geometric Coherence in Markov Decision Processes"
+  title: "Geometric Coherence Learning for Structuring Value Functions in Plain MDPs"
   year: 2026
   type: conference
   author:
@@ -27,12 +28,53 @@
       given: Zeyu  
     - family: Lan
       given: Tian
-  booktitle: arXiv preprint
-  venueShort: arXiv
-  status: preprint
+  booktitle: Forty-third International Conference on Machine Learning (ICML) CCF-A
+  venueShort: ICML
+  status: accepted
+  selected: true
   preprint: https://arxiv.org/abs/2602.02978
   abstract: |
     Geometric properties can be leveraged to stabilize and speed reinforcement learning. Existing examples include encoding symmetry structure, geometry-aware data augmentation, and enforcing structural restrictions. In this paper, we take a novel view of RL through the lens of order theory and recast value function estimates into learning a desired poset (partially ordered set). We propose \emph{GCR-RL} (Geometric Coherence Regularized Reinforcement Learning) that computes a sequence of super-poset refinements -- by refining posets in previous steps and learning additional order relationships from temporal difference signals -- thus ensuring geometric coherence across the sequence of posets underpinning the learned value functions. Two novel algorithms  by Q-learning and by actor--critic are developed to efficiently realize these super-poset refinements. Their theoretical properties and convergence rates are analyzed. We empirically evaluate GCR-RL in a range of tasks and demonstrate significant improvements in sample efficiency and stable performance over strong baselines.
+- id: tang2026nonzero
+  title: "NonZero: Interaction-Guided Exploration for Multi-Agent Monte Carlo Tree Search"
+  year: 2026
+  type: conference
+  author:
+    - family: Tang
+      given: Sizhe
+    - family: Zhang
+      given: Zuyuan
+    - family: Imani
+      given: Mahdi
+    - family: Lan
+      given: Tian
+  booktitle: Forty-third International Conference on Machine Learning (ICML) CCF-A
+  venueShort: ICML
+  status: accepted
+  selected: true
+  preprint: https://arxiv.org/abs/2605.00751
+  abstract: |
+    Monte Carlo Tree Search (MCTS) scales poorly in cooperative multi-agent domains because expansion must consider an exponentially large set of joint actions, severely limiting exploration under realistic search budgets. We propose NonZero, which keeps multi-agent MCTS tractable by running surrogate-guided selection over a low-dimensional nonlinear representation using an interaction-guided proposal rule, instead of directly exploring the full joint-action space. Our exploration uses an interaction score: single-agent deviations are ranked by predicted gain, while two-agent deviations are scored by a mixed-difference measure that reveals coordination benefits even when no single agent can improve alone. We formalize candidate proposal as a bandit problem over local deviations and derive a proposal rule, NonZero, with a sublinear local-regret guarantee for reaching approximate graph-local optima without enumerating the joint-action space. Empirically, NonZero improves sample efficiency and final performance on MatGame, SMAC, and SMACv2 relative to strong model-based and model-free baselines under matched search budgets.
+- id: zhang2026counterfactual
+  title: "Counterfactual Regret Minimization-Mixing for Noncooperative Stochastic Spectrum Games with Imperfect Information"
+  year: 2026
+  type: journal
+  author:
+    - family: Zhang
+      given: Zuyuan
+    - family: Liu
+      given: Lingjia 
+    - family: Bastian
+      given: Nathaniel D.
+    - family: Lan
+      given: Tian
+  booktitle: IEEE/ACM Transactions on Networking(TON) CCF-A
+  venueShort: TON
+  status: accepted
+  selected: true
+  preprint: 
+  abstract: |
+    Spectrum sharing is a key enabler for 5G/6G. We model decentralized spectrum access as a noncooperative, stochastic, imperfect-information extensive-form game and show that running standard Counterfactual Regret Minimization (CFR) independently at each user can exhibit \emph{persistent cycling} rather than converging to a stable equilibrium. We provide a constructive multi-player example and a mapping analysis explaining why the induced regret-matching update need not be contractive in general multi-player, non-zero-sum settings. To address this, we propose \emph{CFR-M}$^2$, a lightweight \emph{regret-mixing} scheme that periodically aggregates a small amount of \emph{cumulative regret} (not policy parameters) across users at a configurable communication interval. Our analysis shows that inserting an infrequent regret-consensus step over any connected communication graph preserves no-(counterfactual)-regret while \emph{contracting inter-agent disagreement in regrets}. Consequently, the Césaro-averaged play converges to an $\varepsilon$–extensive-form coarse correlated equilibrium (EFCCE) with \[ \varepsilon=\tilde O\!\left(\tfrac{1}{\sqrt{T}}\right)+O\!\left(\tfrac{R_{\max}\,T_{\mathrm{comm}}}{(1-\rho)\,T}\right), \] where $\rho$ is the second-largest eigenvalue modulus of the mixing matrix. Under additional structure (e.g., a strongly monotone pseudo-gradient or a strongly convex potential), the EFCCE collapses to a unique Nash equilibrium. Experiments on synthetic networks and a 5G Dynamic Spectrum Sharing (DSS) scenario (WINNER II channel model and practical parameter settings) show that CFR-M$^2$ improves convergence stability and system reward over CFR and several learning/game-theoretic baselines, while requiring only \emph{infrequent} communications.
 - id: zhang2026geometry
   title: "Geometry of drifting mdps with path-integral stability certificates"
   year: 2026
