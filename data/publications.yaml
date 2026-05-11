@@ -68,7 +68,7 @@
       given: Nathaniel D.
     - family: Lan
       given: Tian
-  booktitle: IEEE/ACM Transactions on Networking(TON) CCF-A
+  journal: IEEE/ACM Transactions on Networking(TON) CCF-A
   venueShort: TON
   status: accepted
   selected: true
